@@ -1,0 +1,26 @@
+{
+  "name": "iras-admin",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"wsrun --parallel start\""
+  },
+  "private": true,
+  "devDependencies": {
+    "@nx/js": "19.6.4",
+    "@types/lodash-es": "^4.17.12",
+    "@types/node": "^22.7.3",
+    "concurrently": "^8.2.2",
+    "nx": "19.6.4",
+    "sass": "^1.78.0",
+    "sass-loader": "^16.0.1",
+    "wsrun": "^5.2.4"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "ant-design-vue": "^4.2.3",
+    "lodash-es": "^4.17.21"
+  }
+}
