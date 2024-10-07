@@ -6,5 +6,4 @@ const axiosInstance = axios.create({
 });
 
 export const getData = () => axiosInstance.get('/data');
-
 export default axiosInstance;
