@@ -14,7 +14,7 @@
         </div>
         <div style="align-self: stretch">
           <span class="bc-text-md bc-text-gray-500">
-            Keep track of your change on admission.
+            Easily Track Changes in Your Admission
           </span>
         </div>
       </div>

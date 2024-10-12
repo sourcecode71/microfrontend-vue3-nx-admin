@@ -16,13 +16,12 @@ import { onMounted, ref } from "vue";
 import IrasCollarButton from '../components/IrasCollarButton.vue';
 import { EditOutlined } from "@ant-design/icons-vue";
 import { useNetwork } from '../services/useNetwork';
-import {AppApplicantTableColumns} from "../model/AdmissionProgram"
-const { getFakeAppMasterData } = useNetwork();  // Call useNetwork to get the object
+import {AppApplicantTableColumns} from "../model/AdmissionProgram";
+const { getFakeAppMasterData } = useNetwork();  
 
 const appData = ref();
 const initAllPrograms = async () => {
   const appResponse =await getFakeAppMasterData();
-  console.log(" program ",appResponse);
   appData.value = appResponse.data
 }
 

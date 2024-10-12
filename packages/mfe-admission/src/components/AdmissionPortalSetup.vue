@@ -17,11 +17,11 @@ import IrasCollarButton from '../components/IrasCollarButton.vue';
 import { EditOutlined } from "@ant-design/icons-vue";
 import { useNetwork } from '../services/useNetwork';
 import {AppMasterTableColumns} from "../model/AdmissionProgram"
-const { getFakeAppMasterData } = useNetwork();  // Call useNetwork to get the object
+const { getAppMasterData } = useNetwork();  // Call useNetwork to get the object
 
 const appData = ref();
 const initAllPrograms = async () => {
-  const appResponse =await getFakeAppMasterData();
+  const appResponse =await getAppMasterData();
   console.log(" program ",appResponse);
   appData.value = appResponse.data
 }

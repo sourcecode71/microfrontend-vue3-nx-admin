@@ -1,0 +1,92 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Admission form setup page loading",
+    "line": 1,
+    "id": "admission-form-setup-page-loading",
+    "tags": [],
+    "uri": "app.feature",
+    "elements": [
+      {
+        "id": "admission-form-setup-page-loading;verify-the-visibility-of-admission-setup-tabs",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Verify the visibility of admission setup tabs",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I navigate to the admission setup form page",
+            "result": {
+              "status": "passed",
+              "duration": 828000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "the page should load without errors",
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should see the tab \"Admission Dashboard\"",
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "admission-form-setup-page-loading;verify-the-visibility-of-admission-setup-tabs",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Verify the visibility of admission setup tabs",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I navigate to the admission setup form page",
+            "result": {
+              "status": "passed",
+              "duration": 328000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "the page should load without errors",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should see the tab \"Application Setup\"",
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

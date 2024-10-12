@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+   "target": "es5",
+    "types": ["cypress"],
     "module": "ESNext",
     "strict": true,
     "jsx": "preserve",
     "importHelpers": true,
     "moduleResolution": "node",
-    "types": ["node"],
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,

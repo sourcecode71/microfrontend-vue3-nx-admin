@@ -46,10 +46,10 @@ const AppMasterTableColumns: TableColumnsType = [
   },
 ];
 const AppApplicantTableColumns: TableColumnsType = [
-  { title: 'Program', dataIndex: 'program', key: '1', width: 150, fixed: 'left' },
+  { title: 'Program', dataIndex: 'program', key: '1', width: 250, fixed: 'left' },
   { title: 'Year', width: 100, dataIndex: 'admissionYear', key: 'year' },
   { title: 'Semester', width: 100, dataIndex: 'admissionSemName', key: 'semester' },
   { title: 'Applicant Count', dataIndex: 'applicantCount', key: 'applicantCount', width: 150 },
-  { title: 'Paid Count', dataIndex: 'paindCount', key: 'paindCount', width: 150 },
+  { title: 'Paid Count', dataIndex: 'paidCount', key: 'paindCount', width: 150 },
 ];
 export { ProgramsList, ApplicantSummery, AppMasterTableColumns, AppApplicantTableColumns }

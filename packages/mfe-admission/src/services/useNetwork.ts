@@ -1,5 +1,5 @@
 import axios from "axios";
-import { makeFakeAdmissionMasterData } from "../../cypress/fixtures/factories/admission"
+import { makeFakeAdmissionMasterData,makeFakeApplicantSUmmery } from "../../cypress/fixtures/factories/admission"
 const VUE_APP_BASE_URL = process.env.VUE_APP_BASE_URL;
 
 const createUrl = (queryParams: {
@@ -34,7 +34,7 @@ export const useNetwork = () => {
     }
 
     const getFakeAppMasterData = async () => {
-        return makeFakeAdmissionMasterData();
+        return makeFakeApplicantSUmmery();
     }
     return { getAppMasterData, getFakeAppMasterData }
 }
