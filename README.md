@@ -42,13 +42,13 @@ Make sure you have the following installed:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/sourcecode71/iras-admin.git
+   git clone https://github.com/sourcecode71/microfrontend-vue3-nx-admin.git
    ```
 
 2. **Install dependencies**:
 
    ```bash
-   cd iras-admin-portal
+   cd microfrontend-vue3-nx-admin
    npm install
    ```
 
