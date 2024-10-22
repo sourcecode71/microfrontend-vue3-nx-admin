@@ -16,7 +16,7 @@ import { onMounted, ref } from "vue";
 import IrasCollarButton from '../components/IrasCollarButton.vue';
 import { EditOutlined } from "@ant-design/icons-vue";
 import { useNetwork } from '../services/useNetwork';
-import {AppApplicantTableColumns} from "../model/AdmissionProgram";
+import {AppApplicantTableColumns} from "../Configs/TableConfig";
 const { getFakeAppMasterData } = useNetwork();  
 
 const appData = ref();

@@ -25,6 +25,7 @@
   "dependencies": {
     "ant-design-vue": "^4.2.3",
     "cypress-real-events": "^1.13.0",
-    "lodash-es": "^4.17.21"
+    "lodash-es": "^4.17.21",
+    "vuex": "^4.1.0"
   }
 }

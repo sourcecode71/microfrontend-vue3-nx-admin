@@ -16,8 +16,8 @@ import { onMounted, ref } from "vue";
 import IrasCollarButton from '../components/IrasCollarButton.vue';
 import { EditOutlined } from "@ant-design/icons-vue";
 import { useNetwork } from '../services/useNetwork';
-import {AppMasterTableColumns} from "../model/AdmissionProgram"
-const { getAppMasterData } = useNetwork();  // Call useNetwork to get the object
+import {AppMasterTableColumns} from "../Configs/TableConfig";
+const { getAppMasterData } = useNetwork();  // Call useNetwork to get                                 the object
 
 const appData = ref();
 const initAllPrograms = async () => {
