@@ -1,5 +1,5 @@
 import { Commit } from "vuex";
-import { Semesaters } from "../../../shared/standalone";
+import { Semesters } from "../../../shared/standalone";
 import { ApplicationYearSem } from "../model/AdmissionProgram";
 import STORE_CONSTANTS from "./constants";
 
@@ -10,7 +10,7 @@ const {
 } = STORE_CONSTANTS.MUTATIONS;
 
 export default {
-    setSemesters({ commit }: { commit: Commit }, semesters: Semesaters[]) {
+    setSemesters({ commit }: { commit: Commit }, semesters: Semesters[]) {
         commit(SET_SEMESTERS, semesters);
     },
     setApplicationYearSem({ commit }: { commit: Commit }, appYearSem: ApplicationYearSem) {

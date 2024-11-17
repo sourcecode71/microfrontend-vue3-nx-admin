@@ -46,13 +46,13 @@ import { defineAsyncComponent, onMounted, Ref, ref } from 'vue';
 import IrasCollarBadge from './components/IrasCollarBadge.vue';
 import IrasCollarButton from './components/IrasCollarButton.vue';
 import IrasCollarHeader from './components/IrasCollarHeader.vue';
-import { notification } from "ant-design-vue";
 import { ReloadOutlined,PlusOutlined} from "@ant-design/icons-vue";
-import { useNetwork } from './services/useNetwork';
+import { useStore } from './composables/useStore';
 
 const appViews: Ref<any[]> = ref([]);
 const activeKey = ref("1");
 const isLoading=ref(false);
+const {setApplicationYearSem,appSem,appYear,semesters } =useStore();
 
 const saveChanges=()=>{
 
@@ -69,6 +69,11 @@ const getAppView = async () => {
 };
 
 onMounted(async () => {
+   const appYearSem = {
+      "applicationYear":"2024",
+      "applicationSem":"1"
+   };
+  setApplicationYearSem(appYearSem);
   await getAppView();
 });
 

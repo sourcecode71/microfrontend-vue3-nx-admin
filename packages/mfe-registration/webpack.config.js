@@ -68,8 +68,10 @@ module.exports = (_, argv) => ({
     new ModuleFederationPlugin({
       name: "mfe_registration",
       filename: "remoteEntry.js",
-      remotes: {},
-      exposes: {},
+      remotes: { },
+      exposes: { 
+        "./App" : "./src/App.vue",
+      },
       shared: require("./package.json").dependencies,
     }),
     new HtmlWebPackPlugin({

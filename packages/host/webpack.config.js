@@ -69,7 +69,8 @@ module.exports = (_, argv) => ({
       name: "host",
       filename: "remoteEntry.js",
       remotes: {
-        mfe_admission:"mfe_admission@http://localhost:8081/remoteEntry.js"
+        mfe_admission:"mfe_admission@http://localhost:8081/remoteEntry.js",
+        mfe_registration:"mfe_registration@http://localhost:8082/remoteEntry.js"
       },
       exposes: {},
       shared: require("./package.json").dependencies,
